@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net48</TargetFramework>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		<CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+		<AssemblyName>DredgeRunInBackground</AssemblyName>
+		<CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+		<PlatformTarget>x86</PlatformTarget>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="DredgeRunInBackground.csproj.user" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="mod_meta.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="DredgeGameLibs" Version="1.1.2" />
+		<Reference Include="Winch">
+			<HintPath>$(GameInstall)\Winch.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+	</ItemGroup>
+
+
+
+</Project>
